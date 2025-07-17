@@ -10,9 +10,44 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px; /* optional, keeps things neat on large screens */
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
 .portfolio-logo {
   filter: invert(10) brightness(100);
+  margin-top: 20px;
+  height: 80px;
+  width: 100px;
+  object-fit: contain;
 }
+
 
 .wave-hand-emoji {
   font-size: 48px;
@@ -75,7 +110,7 @@
   left: 0px;
   width: 100%;
   height: 1000%;
-  background: linear-gradient(to bottom, #131313, #151514);
+  background: #000000;
   border-left: 2px solid #FF7601;
   animation: typing 4s steps(21) infinite alternate;
 }
@@ -89,6 +124,81 @@
   100% { left: 0%; }     /* Pause again at start (~0.2s) */
 }
 
+.left-exp {
+  animation: appear-from-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.right-exp {
+  animation: appear-from-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.left-exp-arrow { 
+  animation: appear-from-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.right-exp-arrow { 
+  animation: arrow-from-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes arrow-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.about-text {
+  color: #DCD7C9;
+}
+
+.stats-text {
+  color: #DBDBDB;
+}
 
 .container{
   width: 100%;
@@ -96,7 +206,7 @@
   color: #FFFFFF;
 }
 
-.tech-box {
+.tech-box { 
   width: 80px;
   height: 80px;
   background-color: #1f1f1f;
