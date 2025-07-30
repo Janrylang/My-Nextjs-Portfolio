@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import '/home/adminjanry/next-tutorial/my-nextjs-app/src/app/globals.css';
+import '/home/adminjanry/next-tutorial/my-nextjs-app/src/app/global.css';
 import { Geist, Geist_Mono, Rubik } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
