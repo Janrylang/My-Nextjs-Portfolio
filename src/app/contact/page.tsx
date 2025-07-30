@@ -3,8 +3,8 @@
 
 export default function Contact() {
   return (
-    <div>
-      <div id="contact" className="text-white">
+    <div id="contact">
+      <div className="text-white">
         <div>
           <p className="text-5xl mb-20 text-center">Say Hi! </p>
         </div>
