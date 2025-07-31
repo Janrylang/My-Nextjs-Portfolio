@@ -43,8 +43,8 @@ export default function Home() {
           <p className="text-3xl sm:text-4xl md:text-5xl mb-4">
             <span role="img" aria-label="wave">👋</span> Hi there, kumusta!
           </p>
-          <div className="text-base sm:text-lg md:text-xl leading-relaxed">
-            I'm <span className="font-semibold">Janry Agno</span>, a <span className="text-yellow-400">smol-brained</span> junior front-end dev aspiring to be a <br />
+          <div className="typing-container text-base sm:text-lg md:text-xl leading-relaxed">
+            My name is <span className="dev-name font-semibold">Janry Agno</span>, a <span className="text-yellow-400">smol-brained</span> junior front-end dev aspiring to be a <br />
             <span className="typing-effect" ref={textRef}></span>
           </div>
 
