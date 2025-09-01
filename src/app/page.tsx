@@ -36,35 +36,40 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="min-h-screen p-6 sm:p-10 md:p-16 lg:p-20 font-mono bg-black text-white"
+      className="main-wrapper font-mono bg-black text-white"
     >
-      <main className="flex flex-col gap-8 items-center text-center">
+      <main className="body flex flex-col gap-8 items-center text-center">
         <div className="container mx-auto mt-12 mb-24 px-4 sm:px-6 lg:px-8">
-          <p className="text-3xl sm:text-4xl md:text-5xl mb-4">
-            <span role="img" aria-label="wave">👋</span> Hi there, kumusta!
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
+            <span className="wave-hand-emoji" role="img" aria-label="wave">👋</span> Hi there, kumusta!
           </p>
-          <div className="typing-container text-base sm:text-lg md:text-xl leading-relaxed">
-            My name is <span className="dev-name font-semibold">Janry Agno</span>, a <span className="text-yellow-400">smol-brained</span> junior front-end dev aspiring to be a <br />
+          <div className="typing-container text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed">
+            My name is
+            <span className="dev-name text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold"> Janry Agno</span>, a
+            <span className="text-yellow-400"> smol-brained </span> junior front-end dev aspiring to be a
+            <br />
             <span className="typing-effect" ref={textRef}></span>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center mt-8 gap-4 sm:gap-6">
+          <div className="flex flex-row sm:flex-row justify-center items-center mt-8 mx-8 gap-3 sm:gap-6">
             <a
-              href="https://drive.google.com/file/d/1LHS4ySMR1c4fYpud3YGOwbJIxLc3OCLo/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1wTf9DvoK79w4-iTBK8UOdnW2F5mzd7ny/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-stone-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-stone-800 transition border border-transparent hover:border-white text-sm sm:text-base"
+              className="bg-stone-700 text-white px-3 py-3.5 sm:px-4 sm:py-3 rounded-2xl shadow-md transition border border-transparent hover:bg-stone-800 hover:border-white text-xs sm:text-sm w-60 sm:w-52 text-center"
             >
               Check out my Resume
             </a>
 
             <a
               href="#contact"
-              className="bg-stone-800 text-white px-6 py-3 rounded-lg shadow-md hover:bg-stone-700 transition border border-transparent hover:border-amber-50 text-sm sm:text-base"
+              className="bg-stone-800 text-white px-1 py-3 sm:px-4 sm:py-3.5 rounded-2xl shadow-md transition border border-transparent hover:bg-stone-700 hover:border-amber-50 text-xs sm:text-base w-28 sm:w-40 text-center"
             >
               Contact me
             </a>
+
           </div>
+
         </div>
 
         <section id="about" className="w-full">
