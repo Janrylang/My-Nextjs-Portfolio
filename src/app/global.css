@@ -14,6 +14,51 @@ html {
   scroll-behavior: smooth;
 }
 
+.main-wrapper {
+  max-width: 1000px;
+  padding: 100px 0;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
 .nav-bar {
   position: sticky;
   top: 0;
@@ -52,7 +97,7 @@ html {
   object-fit: contain;
 }
 
-
+/* Animations */
 .wave-hand-emoji {
   font-size: 48px;
   animation: waving-hand 2.5s infinite;
@@ -61,34 +106,21 @@ html {
 }
 
 @keyframes waving-hand {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4.0deg);
-  }
-  50% {
-    transform: rotate(10deg);  
-  }
-  60% {
-    transform: rotate(0deg);  
-  }
-  100% {
-    transform: rotate(0deg);  
-  }
-} 
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+}
+
+@keyframes typing {
+  0%, 7% { left: 0%; }
+  40% { left: 100%; }
+  60% { left: 100%; }
+  93%, 100% { left: 0%; }
+}
 
 .dev-name {
-  font-size: 2.5rem;
   font-weight: bold;
   color: #547792;
 }
@@ -97,7 +129,6 @@ html {
   position: relative;
   display: inline-block;
   color: #FFFFFF;
-  font-size: 2.5rem;
   overflow: hidden;
 } 
 
@@ -207,12 +238,9 @@ html {
 .container{
   width: 100%;
   height: 100%;
-  color: #FFFFFF;
 }
 
 .tech-box { 
-  width: 80px;
-  height: 80px;
   background-color: #1f1f1f;
   }
 
