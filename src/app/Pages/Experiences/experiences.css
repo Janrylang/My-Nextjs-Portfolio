@@ -1,0 +1,86 @@
+.about-text {
+  color: #DCD7C9;
+}
+
+.left-exp {
+  animation: appear-from-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.right-exp {
+  animation: appear-from-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.left-exp-arrow { 
+  animation: appear-from-right linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.right-exp-arrow { 
+  animation: arrow-from-left linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes arrow-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.tech-box { 
+  background-color: #1f1f1f;
+  }
+
+.tech-box:hover {
+  transform: rotateY(360deg);
+  transition: 1.5s;
+}
+
+/* .stats-text {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: #DBDBDB;
+} */
