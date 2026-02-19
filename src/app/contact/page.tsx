@@ -6,10 +6,10 @@ export default function Contact() {
     <div id="contact">
       <div className="text-white">
         <div>
-          <p className="text-2xl mb-20 sm:text-1xl md:text-3xl lg:text-5xl text-center">Say Hi! </p>
+          <p className="text-2xl mb-20 sm:text-1xl md:text-3xl lg:text-4xl text-center">Say Hi! </p>
         </div>
 
-        <p className="text-center text-sm max-w-xl mx-auto leading-relaxed sm:text-base md:text-lg lg:text-2xl">
+        <p className="text-center text-sm max-w-xl mx-auto leading-relaxed sm:text-base md:text-lg lg:text-xl">
           But don’t call me — I’ll panic and cry and just watch my phone ring.
         </p>
         <br /> <br />

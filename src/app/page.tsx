@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import dynamic from 'next/dynamic';
 
-const About = dynamic(() => import('./about/page'), { ssr: false });
+const About = dynamic(() => import('./Pages/Experiences/page'), { ssr: false });
 const Projects = dynamic(() => import('./projects/page'), { ssr: false });
 const Contact = dynamic(() => import('./contact/page'), { ssr: false });
 
@@ -40,18 +40,18 @@ export default function Home() {
     >
       <main className="body flex flex-col gap-8 items-center text-center">
         <div className="container mx-auto mt-12 mb-24 px-4 sm:px-6 lg:px-8">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl mb-4">
             <span className="wave-hand-emoji" role="img" aria-label="wave">👋</span> Hi there, kumusta!
           </p>
-          <div className="typing-container text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed">
+          <div className="typing-container text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-relaxed">
             My name is
-            <span className="dev-name text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold"> Janry Agno</span>, a
+            <span className="dev-name text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold"> Janry Agno</span>, a
             <span className="text-yellow-400"> smol-brained </span> junior front-end dev aspiring to be a
             <br />
             <span className="typing-effect" ref={textRef}></span>
           </div>
 
-          <div className="flex flex-row sm:flex-row justify-center items-center mt-8 mx-8 gap-3 sm:gap-6">
+          <div className="flex flex-row sm:flex-row justify-center items-center mt-20 mx-8 gap-3 sm:gap-6">
             <a
               href="https://drive.google.com/file/d/1wTf9DvoK79w4-iTBK8UOdnW2F5mzd7ny/view"
               target="_blank"
